@@ -3,30 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legacy</title>
-    <style>
-      body {
-        background-image: url('./images/museum.png');
-        background-size: cover;
-        background-attachment: fixed;
-      }
-      a {
-        color: rgb(41, 10, 10);
-        background-color: rgba(58, 53, 53, 0.6);
-        padding: 10px;
-        text-decoration: transparent;
-        display: list-item;
-        margin-bottom: 20px;
-      }
-    </style>
+    <title>Visit</title>
   </head>
-  <body>
-    <a href="origins.html">Go to the About Origins Page</a>
-    <br /><br />
-    <a href="artifacts.html">Go to the About Artifacts Page</a>
-    <br /><br />
-    <a href="figures.html">Go to the About Figures Page</a>
-
-    <main></main>
+  <body
+    style="
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    "
+  >
+    <br />
+    <form
+      style="
+        background-color: white;
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+      "
+      action="http://localhost:3000/"
+      method="POST"
+    >
+      >
+      <fieldset>
+        <legend>Plan Visit:</legend>
+        <br />
+        <u><label for="fname">First name:</label><br /></u>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <u><label for="lname">Last name:</label><br /></u>
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <u><label for="email">Email:</label><br /></u>
+        <input type="email" id="email" name="email" /><br /><br />
+        <u><label for="dateVisit">Date:</label><br /></u>
+        <input type="date" id="dateVisit" name="dateVisit" /><br /><br />
+        <u><label for="quantity">Number Of Visiters:</label><br /></u>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          max="5"
+        /><br /><br />
+        <u><legend>Choose the artist:</legend></u>
+        <input type="radio" id="Monet" name="artist" value="Monet" />
+        <label for="Monet">Monet</label><br />
+        <input type="radio" id="Vermeer" name="artist" value="Vermeer" />
+        <label for="Vermeer">Vermeer</label><br />
+        <input type="radio" id="Both" name="artist" value="Both" />
+        <label for="Both">Both</label><br /><br />
+        <center>
+          <button type="submit" value="Submit">Submit</button>
+          <button type="reset" value="Reset">Reset</button>
+        </center>
+      </fieldset>
+    </form>
   </body>
 </html>
+
+

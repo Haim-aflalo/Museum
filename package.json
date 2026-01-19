@@ -1,0 +1,24 @@
+{
+  "name": "museum",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000M\u0000u\u0000s\u0000e\u0000u\u0000m\u0000\r\u0000 \u0000",
+  "main": "action_page.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haim-aflalo/Museum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Haim-aflalo/Museum/issues"
+  },
+  "homepage": "https://github.com/Haim-aflalo/Museum#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
